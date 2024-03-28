@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Awal Belajar Java Script by RIRA</title>
+    </head>  
+      <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Date and Time.</button>
+
+<p id="demo"></p>
+
+<body>
+    <h2>Pengenalan JS</h2>
+    <p> Salah satu dari banyak metode JavaScript HTML adalah getElementById().<br>
+        Contoh di bawah ini "menemukan" elemen HTML (dengan id="demo"),<br>
+        dan mengubah konten elemen (innerHTML) menjadi "Halo JavaScript":<br>
+        ----------------------------------------------------------------------------------------------</p>
+    <p id="demo">JavaScript can change HTML content.</p>
+<button type="button" 
+onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+ganti</button>
+
+    <p id="identitas">Nama  : Rira Dewi Sari<br> 
+                      NIM   : 2023010037<br> 
+                      Kelas : RPL B SMT 1</p>
+<button type="button" onclick="document.getElementById('identitas').style.fontSize='15px'">perkecil</button>
+<button type="button" onclick="document.getElementById('identitas').style.fontSize='35px'">perbesar</button>
+<button type="button" onclick="document.getElementById('identitas').style.display='none'">hilangkan</button>
+<button type="button" onclick="document.getElementById('identitas').style.display='block'">tampilkan</button>
+</body>
+
+
+<body>
+    <h2>Tag Script</h2>
+    <p id="js eksternal">Pencarian pada JS</p>
+    <script src="https://www.w3schools.com/js/myScript.js"> </script>
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+    <img src="/images/picture.jpg" alt="Mountain" style="width:300px">
+</body>
+
+
+<body>
+    <h2>Keluaran JS</h2>
+    <p> Menulis ke dalam elemen HTML, menggunakan innerHTML untuk mendefinisikan konten HTML<br>
+        Menulis ke dalam output HTML menggunakan document.write() hanya untuk tujuan pengujian<br>
+        Menulis ke dalam kotak peringatan, menggunakan window.alert() kotak peringatan untuk menampilkan data.<br>
+        Menulis ke konsol browser, menggunakan console.log() Untuk keperluan debugging metode di browser untuk menampilkan data.</p>
+    
+    <p>-----innerHTML-----</p>
+    <p id="inner"></p>
+    <script>document.getElementById("inner").innerHTML = 5 + 6;</script>
+    <p>-----document.writer()-----</p>
+    document.write(5 + 6)= <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    <p>-----window.alert()-----</p>
+    <script>//window.alert(5 + 6)</script>
+    <p>-----console.log()-----</p>
+    <script>console.log(5+6)</script>
+
+    <p>Satu-satunya pengecualian adalah Anda dapat memanggil window.print()metode di browser untuk mencetak konten jendela saat ini.</p>
+    <button onclick="window.print()">Print this page</button>
+</body>
+
+
+<body> 
+  <h2>Pernyataan JS</h2>   
+<p id="statement1"></p>
+<script>
+let x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+document.getElementById("statement").innerHTML =
+"The value of z is " + z + "."; 
+</script>
+
+<p> titik koma</p>
+<p id="demo1"></p>
+<script>
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+<p id="demo2"></p>
+<script>
+let a, b, c;
+a = 5; b = 6; c = a + b;
+document.getElementById("demo2").innerHTML = c;
+</script>
+</body>
+
+<body>
+<p>JavaScript code blocks are written between { and }</p>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+</script>
+</body> 
+
+</html> 
