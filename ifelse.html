@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body>
+        <p id ='demo'></p>
+        <script>
+            //Contoh ketika memiliki 10 angkot 
+            let output = "";
+            let noAngkot = 1;
+            let jmlAngkot = 10;
+            
+            while(noAngkot <= jmlAngkot) {
+                output += '<br>Angkot No. '+ noAngkot + ' beroperasi dengan baik';
+                noAngkot++;
+            }
+            
+            //sebagian tidak beroperasi
+            let angkotBeroperasi = 6;
+            for (noAngkot =7; noAngkot <= jmlAngkot; noAngkot++) {
+                output += '<br>Angkot No. '+ noAngkot + ' sedang tidak beroperasi';
+            }
+
+
+            document.getElementById('demo').innerHTML = output;
+        </script>
+
+    </body>
+</head>
+</html>
