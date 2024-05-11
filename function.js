@@ -34,7 +34,7 @@ function randomsize() {
         console.log(randomNumber)
     }
 }
-randomomsize()
+randomsize()
 
 sum1(1,1)
 sum2(2,2)
