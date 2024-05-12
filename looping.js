@@ -45,5 +45,3 @@ namaSaya.forEach((value, index) => {
 namaSaya.map((value, index) => {
     console.log(value, index + 1)
 })
-
-//for of agar kita mengetahui isi
