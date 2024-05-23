@@ -1,0 +1,55 @@
+/* style.css */
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.background {
+    background-image: linear-gradient(to bottom right, rgb(0, 183, 255), rgb(31, 39, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+}
+
+.navbar { text-transform: underline #ff8000;
+    text-underline-offset: auto;
+    text-decoration: aliceblue;
+}
+
+.nav-item{
+    font-size: large;
+    page: aria-current;
+}
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+#output table {
+    border: 5px solid black;
+}
+#output table tr td {
+    border: 5px solid black;
+}
+#output table tr th {
+    border: 5px solid black;
+}
+
+
