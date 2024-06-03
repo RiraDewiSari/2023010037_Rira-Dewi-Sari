@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     </head>
 <body class="background">
-    <nav class="navbar navbar-expand-lg container-fluid justify-content-center">
-        <ul class="navbar-nav row" id="nav-link">
+    <nav class="navbar navbar-expand-lg container-fluid">
+        <ul class="navbar-nav" id="nav-link">
             <li class="nav-item col">
                 <a class="nav-link" href="index.html"><h4>Home</h4></a>
             </li>
@@ -23,9 +23,13 @@
         </ul>
     </nav>
 
+  </div>
+  <i class="fa fa-bars" onclick="showMenu()"></i>
+  </div>
+  <div class="size-form">
     <div class="container">
         <h1>Penentuan Nilai Mahasiswa</h1>
-            <form id="nilaiForm">
+            <form id="form-nilai">
               <label for="nim">NIM:</label>
               <input type="text" id="nim" class="input-group input-group mb-3" required>
           
@@ -69,8 +73,9 @@
                   </thead>
                   <tbody id="hasilBody"></tbody>
                 </table>
-              </div> <!-- form evaluations output -->
-
-        </div>
-</body>
-</html>
+            </div>
+    </div> 
+  </div> 
+        <script src="hasil.js"></script>
+    </body>
+    </html>

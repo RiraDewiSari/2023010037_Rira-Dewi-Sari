@@ -8,21 +8,24 @@ html {
 }
 
 .background {
-    background-image: linear-gradient(to bottom right, rgb(0, 183, 255), rgb(31, 39, 255));
+    background-image: url(background.jpg);
+    height: 100vh;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;    
+    background-attachment: fixed;  
 }
-
-.navbar { text-transform: underline #ff8000;
+.navbar :hover{ 
+    text-transform: underline #ff8000;
     text-underline-offset: auto;
-    text-decoration: aliceblue;
+    text-decoration: rgb(63, 166, 255);
 }
 
 .nav-item{
     font-size: large;
     page: aria-current;
 }
+
 section {
     position: relative;
     max-width: 400px;
@@ -51,5 +54,12 @@ h1 {
 #output table tr th {
     border: 5px solid black;
 }
+.btn:hover {
+    background-color: rgb(153, 255, 0);
+    color: #000000;
+}
 
-
+.form-array {
+    background: #ff5900;
+    border-radius: 2pc;
+}
