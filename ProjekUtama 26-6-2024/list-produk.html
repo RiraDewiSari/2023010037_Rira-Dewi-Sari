@@ -41,9 +41,22 @@
 <body>
 <div class="container mt-5">
     <h1 class="mb-4">Daftar Produk Semua Operator</h1>
+    <div class="col-xl-3">
+        <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
+            <label for="fruits">Operator:</label>
+            <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
+                <option value="volvo">AXIS</option> 
+                <option value="saab">Indosat</option>
+                <option value="opel">Smartfren</option>
+                <option value="audi">Telkomsel</option>
+                <option value="audi">Tri</option>
+                <option value="audi">XL</option>
+            </select>
+        </div>
+    </div>
 
     <!-- AXIS -->
-    <div class="operator-section">
+    <div class="operator-section" id="axis">
         <h2 class="operator-title axis">AXIS</h2>
         <ul class="product-list">
             <li><span>Kuota Harian</span> <span>Rp.9.000</span></li>
@@ -79,7 +92,7 @@
     </div>
 
     <!-- Tri -->
-    <div class="operator-section">
+    <div class="operator-section" id="tri">
         <h2 class="operator-title tri">Tri</h2>
         <ul class="product-list">
             <li><span>Kuota Harian</span> <span>Rp.5.000</span></li>
