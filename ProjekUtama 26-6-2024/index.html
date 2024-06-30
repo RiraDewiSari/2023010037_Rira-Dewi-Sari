@@ -62,8 +62,22 @@
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link active">Beranda</a>
                             <a href="#tentang" class="nav-item nav-link">Tentang</a>
-                            <a href="#produk" class="nav-item nav-link">Produk</a>
-                            <a href="#ppob" class="nav-item nav-link">PPOB</a>                           
+                            <div class="nav-item dropdown">
+                                <a href="#produk" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="#operator" class="dropdown-item">Operator</a>
+                                    <a href="#perlengkapan" class="dropdown-item">Perlengkapan Handprone</a>
+                                    <a href="#aksesoris" class="dropdown-item">Aksesoris</a>                          
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#ppob" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PPOB</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="#tagihan online" class="dropdown-item">Tagihan Online</a>
+                                    <a href="#transfer uang" class="dropdown-item">Transfer Uang</a>
+                                    <a href="#top-up" class="dropdown-item">Top-up e-wallet</a>                          
+                                </div>
+                            </div>                          
                             <a href="contact.html" class="nav-item nav-link">Kontak</a>
                             <a href="develope.html" class="nav-item nav-link">Develope</a>
                         </div>
@@ -219,7 +233,7 @@
         </div>
         <!-- Banner Section End -->
         
-        <div class="py-2" id="produk"></div>
+        <div id="operator"></div>
         <!-- Operator Shop Start tab-1-6 -->
         <div class="container-fluid fruite py-4">
             <div class="container py-4">
@@ -478,8 +492,8 @@
         </div>
         <!-- Operator Shop End-->
 
-        <br id="perlengkapan">
-        <!-- Perlengkapan HP Shop Start tab-7-11(Casing,Charger,Kabel data,Memori,Tg) -->
+        <div id="perlengkapan"></div>
+        <!-- Perlengkapan HP Shop Start -->
         <div class="container-fluid fruite py-4">
             <div class="container py-4">
                 <div class="tab-class text-center">
@@ -870,8 +884,8 @@
         </div>
         <!-- Perlengkapan HP Shop End -->
 
-        <br id="aksesoris">
-        <!-- Aksesoris HP Shop Start tab-12-19 (Adaptor,Card rider,Charger mobil,flashdisk,Headset,Otg,Powerbank,Ring&PopSocket) -->
+        <div id="aksesoris"></div>
+        <!-- Aksesoris HP Shop Start -->
         <div class="container-fluid fruite py-4">
             <div class="container py-4">
                 <div class="tab-class text-center">
@@ -1229,7 +1243,7 @@
         <!-- Aksesoris HP Shop End -->
 
         
-        <!-- Vesitable Shop Start-->
+        <!-- PPOB Title-->
         <div class="container-fluid vesitable py-4" id="ppob">
             <div class="container py-4">
                 <h1>PPOB (Payment Point Online Bank)</h1>
@@ -1269,7 +1283,10 @@
                         </div>
                     </div>
                 </div>
-
+        
+        <!-- Tagihan Online -->
+        <div class="container-fluid fruite py-4" id="tagihan online">
+            <div class="container py-4">
                 <h1 class="mb-0">Tagihan Online</h1>
                 <div class="owl-carousel vegetable-carousel justify-content-center">
                     <div class="border border-primary rounded position-relative vesitable-item">
@@ -1278,7 +1295,7 @@
                         </div>                        
                         <div class="p-4 rounded-bottom">
                             <h4>Listrik Prabayar</h4>
-                            <p>Melayani pembayaran listrik Tagihan atau Prabayar</p><br>
+                            <p>Melayani pembayaran listrik Tagihan atau Prabayar</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">Rp.-</p>
                             </div>
@@ -1326,7 +1343,7 @@
                         </div>                        
                         <div class="p-4 rounded-bottom">
                             <h4>Pembayaran Pajak</h4>
-                            <p>Melayani pembayaran All Pajak</p> <br>
+                            <p>Melayani pembayaran All Pajak</p> 
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold mb-0">Rp.-</p>
                             </div>
@@ -1369,7 +1386,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
                 
+        <!-- Transfer Uang -->
+        <div class="container-fluid fruite py-2" id="transfer uang">
+            <div class="container py-2">
                 <h1 class="mb-0">Transfer Uang</h1>
                 <div class="owl-carousel vegetable-carousel justify-content-center">
                     <div class="border border-primary rounded position-relative vesitable-item">
@@ -1457,7 +1479,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <!-- Top-up e-wallet -->
+        <div class="container-fluid fruite py-2" id="top-up">
+            <div class="container py-2">
                 <h1 class="mb-0">Top-up e-wallet</h1>
                 <div class="owl-carousel vegetable-carousel justify-content-center">
                     <div class="border border-primary rounded position-relative vesitable-item">
