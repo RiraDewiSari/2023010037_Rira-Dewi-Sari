@@ -1,0 +1,329 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+/*** Spinner End ***/
+
+/* Topbar */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fixed-top {
+    transition: 0.5s;
+    background: white;
+    border: 0;
+}
+
+.topbar {
+    background-color: #54cfbb;
+    padding: 10px;
+    border-radius: 230px 100px;
+}
+
+.topbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* List AXIS*/
+.section-title-axis,
+.operator-title-axis {
+    background-color: rgb(117, 60, 148);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(117, 60, 148);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-list-axis {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border: 3px solid rgb(117, 60, 148);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-list-axis li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid rgb(117, 60, 148);
+}
+
+.product-list-axis li:last-child {
+    border-bottom: none;
+}
+
+.product-list-axis li span {
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.separator-title {
+    background-color: rgb(117, 60, 148);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(117, 60, 148);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* List Indosat */
+.section-title-indosat,
+.operator-title-indosat {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-list-indosat {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border: 3px solid #ffc107;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-list-indosat li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid #ffc107;
+}
+
+.product-list-indosat li:last-child {
+    border-bottom: none;
+}
+
+.product-list-indosat li span {
+    width: 50%;
+}
+
+/* List Smartfren */
+.section-title-smartfren,
+.operator-title-smartfren {
+    background: linear-gradient( 170deg, #e9f036,#e20808, #e9f036 );
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid linear-gradient( 160deg, #ff0055fc, #e20808);;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-list-smartfren {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border: 3px solid #e20808;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-list-smartfren li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid #e20808;
+}
+
+.product-list-smartfren li:last-child {
+    border-bottom: none;
+}
+
+.product-list-smartfren li span {
+    width: 50%;
+}
+
+/* List Telkomsel */
+.section-title-telkomsel,
+.operator-title-telkomsel {
+    background-color: #cb0000;
+    color:#ffffff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #cb0000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-list-telkomsel {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border: 3px solid #cb0000;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-list-telkomsel li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid #cb0000;
+}
+
+.product-list-telkomsel li:last-child {
+    border-bottom: none;
+}
+
+.product-list-telkomsel li span {
+    width: 50%;
+}
+
+/* List Tri */
+.section-title-tri,
+.operator-title-tri{
+    background: linear-gradient(175deg, #ffffff,#0277BD,#4A148C);
+    color:#ffffff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid linear-gradient(#0277BD,#7b1fa2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-list-tri {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border: 3px solid #7b1fa2;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-list-tri li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid #7b1fa2;
+}
+
+.product-list-tri li:last-child {
+    border-bottom: none;
+}
+
+.product-list-tri li span {
+    width: 50%;
+}
+
+/* List XL */
+.section-title-xl,
+.operator-title-xl{
+    background-color: #172795;
+    color:#ffffff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #172795;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-list-xl {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border: 3px solid #172795;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-list-xl li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid #172795;
+}
+
+.product-list-xl li:last-child {
+    border-bottom: none;
+}
+
+.product-list-xl li span {
+    width: 50%;
+}
+
+
+/* List byu */
+.section-title-byu,
+.operator-title-byu {
+    background: rgb(5 197 244);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(5 197 244);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-list-byu {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border: 3px solid rgb(5 197 244);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-list-byu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid rgb(5 197 244);
+}
+
+.product-list-byu li:last-child {
+    border-bottom: none;
+}
+
+.product-list-byu li span {
+    width: 50%;
+}
